@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            margin: auto;
+            width: 400px;
+            position: relative;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead,tfoot{
+            background-color: gray;
+            color: white;
+        }
+        .numero{
+            text-align: right;
+        }
+        caption{
+            font-weight: bold;
+            font-size: 1.5em;
+            background-color: lightgrey;
+        }
+        h1{
+            text-align: center;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        tbody>tr:nth-child(even){
+            background-color: lightgray;
+            font-weight: bold;
+        }
+        thead>tr>th{
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>uso de tabelas</h1>
+    <table>
+        <caption>estatisticas dos estados</caption>
+        <thead>
+            <th scope="col" style="width: 800px;">estado</th>
+            <th scope="col" style="width: 50px;">população</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>são paulo</td>
+                <td class="numero">50 000 000</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="numero">830 018</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="numero">3 127 683</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">total de habitantes</th>
+                <td><strong>210.210.500</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
